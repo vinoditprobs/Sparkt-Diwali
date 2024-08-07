@@ -1,0 +1,276 @@
+﻿@font-face {
+    font-family: Roboto;
+    src: local(Roboto Thin), url(fonts/roboto/Roboto-Thin.woff2) format("woff2"), url(fonts/roboto/Roboto-Thin.woff) format("woff");
+    font-weight: 100
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Light), url(fonts/roboto/Roboto-Light.woff2) format("woff2"), url(fonts/roboto/Roboto-Light.woff) format("woff");
+    font-weight: 300
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Regular), url(fonts/roboto/Roboto-Regular.woff2) format("woff2"), url(fonts/roboto/Roboto-Regular.woff) format("woff");
+    font-weight: 400
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Medium), url(fonts/roboto/Roboto-Medium.woff2) format("woff2"), url(fonts/roboto/Roboto-Medium.woff) format("woff");
+    font-weight: 500
+}
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto Bold), url(fonts/roboto/Roboto-Bold.woff2) format("woff2"), url(fonts/roboto/Roboto-Bold.woff) format("woff");
+    font-weight: 700
+}
+/*Reset CSS*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+input, select, option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    outline: none;
+    background: #000;
+}
+select::-ms-expand {
+display: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance:none;
+margin: 0;
+}
+::-webkit-input-placeholder {
+opacity:1 !important;
+}
+::-moz-placeholder {
+opacity:1 !important;
+}
+:-ms-input-placeholder {
+opacity:1 !important;
+}
+:-moz-placeholder {
+opacity:1 !important;
+}
+input:focus, textarea:focus, select:focus {
+    background-color: transparent;
+}
+body {
+    font-family: Roboto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+/*Reset CSS*/
+
+
+.loader {
+    position: absolute;
+    margin: 0 auto;
+    width: 60px;
+    height: 50px;
+    font-size: 10px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s
+}
+.loader>div {
+    height: 100%;
+    width: 8px;
+    display: inline-block;
+    float: left;
+    margin-left: 2px;
+    -webkit-animation: delay 1.8s infinite ease-in-out;
+    animation: delay 1.8s infinite ease-in-out
+}
+.loader .bar1 {
+    background-color: #ff533d;
+    -webkit-animation-delay: -.8s;
+    animation-delay: -.8s
+}
+.loader .bar2 {
+    background-color: #f7c331;
+    -webkit-animation-delay: -.7s;
+    animation-delay: -.7s
+}
+.loader .bar3 {
+    background-color: #1c9bd0;
+    -webkit-animation-delay: -.6s;
+    animation-delay: -.6s
+}
+.loader .bar4 {
+    background-color: #2e347e;
+    -webkit-animation-delay: -.5s;
+    animation-delay: -.5s
+}
+.loader .bar5 {
+    background-color: #d9248b;
+    -webkit-animation-delay: -.4s;
+    animation-delay: -.4s
+}
+.loader .bar6 {
+    background-color: #2d916b;
+    -webkit-animation-delay: -.3s;
+    animation-delay: -.3s
+}
+@-webkit-keyframes delay {
+0%, 100%, 40% {
+-webkit-transform:scaleY(.05)
+}
+20% {
+-webkit-transform:scaleY(1)
+}
+}
+@keyframes delay {
+0%, 100%, 40% {
+transform:scaleY(.05);
+-webkit-transform:scaleY(.05)
+}
+20% {
+transform:scaleY(1);
+-webkit-transform:scaleY(1)
+}
+}
+.no-js #loader {
+    display: none
+}
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0
+}
+.loader-wrapp {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999999;
+    background: #00182e
+}
+#garland {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/diwali.png");
+    height: 36px;
+    width: 100%;
+    overflow: hidden;
+ z- index: 3;
+}
+#nums_1 {
+    padding: 100px
+}
+.garland_1 {
+    background-position: 0 0
+}
+.garland_2 {
+    background-position: 0 -36px
+}
+.garland_3 {
+    background-position: 0 -72px
+}
+.garland_4 {
+    background-position: 0 -108px
+}
+.desktop {
+    display: block !important
+}
+.mobile {
+    display: none !important
+}
+.desktop-copy {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    position: relative;
+    z-index: 99;
+}
+.desktop-copy > div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.desktop-copy p {
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #d9248b;
+}
+.desktop-copy .hash-tag {
+    font-weight: 600;
+    font-size: 26px;
+    color: #FFFFFF;
+    margin-top: .3rem
+}
+.desktop-copy small {
+    font-size: 22px;
+    display: block;
+    margin: 1rem 0;
+}
+.share a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    vertical-align: top;
+    margin: 0.75rem;
+}
+.imp-msg {
+    position: absolute;
+    top: 22%;
+    text-align: center;
+    width: 100%;
+    padding: 24px;
+    color: rgba(255,255,255,0.70);
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 520px) {
+.desktop {
+    display: none !important
+}
+.mobile {
+    display: block !important
+}
+}
