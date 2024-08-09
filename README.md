@@ -18,4 +18,4 @@ Sparkt-Diwali is a campaign project designed to promote an eco-friendly Diwali b
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/vinoditprobs/Sparkt-Diwali.git>
